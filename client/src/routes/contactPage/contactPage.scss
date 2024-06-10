@@ -1,0 +1,32 @@
+.contactPage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contactInfo {
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 0 auto;
+
+        div {
+            text-align: center;
+
+            h2 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1em;
+                color: #777;
+            }
+        }
+    }
+}
