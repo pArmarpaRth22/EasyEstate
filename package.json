@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development node api/app.js",
     "start": "NODE_ENV=production node api/app.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "postinstall": "prisma generate"
   },
   "author": "parth",
   "license": "ISC",
@@ -18,7 +19,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
     "prisma": "^5.11.0"
   }
 }
