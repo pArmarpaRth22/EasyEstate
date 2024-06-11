@@ -1,4 +1,6 @@
-import prisma from "../lib/prisma.js";
+// import prisma from "../lib/prisma.js";
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
 
 export const getChats = async (req, res) => {
   const tokenUserId = req.userId;
@@ -90,7 +92,6 @@ export const addChat = async (req, res) => {
 export const readChat = async (req, res) => {
   const tokenUserId = req.userId;
 
-  
   try {
     const chat = await prisma.chat.update({
       where: {
