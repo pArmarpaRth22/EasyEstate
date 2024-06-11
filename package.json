@@ -9,5 +9,8 @@
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "author": "parth",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
